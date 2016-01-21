@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: c555c03bc104670cfdbbd0e6828e325ec46545fa
+  revision: 9a99c7cef533e985e67af5de0e65a39f452b7db9
   specs:
     actioncable (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
@@ -95,6 +95,9 @@ GEM
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     json (1.8.3)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -142,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers!
   byebug
+  kaminari (~> 0.16)
   mysql2 (>= 0.3.18, < 0.5)
   puma
   rails!

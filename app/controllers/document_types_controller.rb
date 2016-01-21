@@ -3,14 +3,12 @@ class DocumentTypesController < ApplicationController
 
   # GET /document_types
   def index
-    @document_types = DocumentType.all
-
-    render(json: @document_types) if stale?(last_modified: @document_types.maximum(:updated_at), public: true)
+    conditional_render paginated(DocumentType)
   end
 
   # GET /document_types/1
   def show
-    render(json: @document_type) if stale?(last_modified: @document_type.updated_at, public: true)
+    conditional_render @document_type, links: { self: document_type_url(@document_type) }
   end
 
   private
