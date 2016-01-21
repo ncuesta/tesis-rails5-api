@@ -1,7 +1,1 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+DocumentType.create! [ { code: 0, name: "Documento Nacional de Identidad", abbreviation: "DNI" }, { code: 1, name: "DNI Temporario", abbreviation: "DNT" }, { code: 2, name: "Cédula de Identidad", abbreviation: "CI" }, { code: 18, name: "Libreta de enrolamiento", abbreviation: "LE" }, { code: 19, name: "Libreta cívica", abbreviation: "LC" }, { code: "90", name: "Pasaporte", abbreviation: "PAS" }, { code: "99", name: "Otros", abbreviation: "OTS" } ]
