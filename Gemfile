@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', github: "rails/rails"
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 # Use mysql2 as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.0'
 # Use Puma as the app server
 gem 'puma'
 
