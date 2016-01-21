@@ -14,6 +14,6 @@ class DocumentTypesController < ApplicationController
   private
 
   def set_document_type
-    @document_type = DocumentType.find_by(code: params[:code])
+    @document_type = DocumentType.find_by!(code: params[:code])
   end
 end

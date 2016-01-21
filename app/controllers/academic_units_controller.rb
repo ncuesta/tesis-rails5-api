@@ -14,6 +14,6 @@ class AcademicUnitsController < ApplicationController
   private
 
   def set_academic_unit
-    @academic_unit = AcademicUnit.find_by(code: params[:code])
+    @academic_unit = AcademicUnit.find_by!(code: params[:code])
   end
 end
